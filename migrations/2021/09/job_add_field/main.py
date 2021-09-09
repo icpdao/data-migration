@@ -2,12 +2,12 @@ import sys
 import os
 import time
 
+sys.path.append(os.path.abspath('../../../../'))
+import settings
+
 from common.models.icpdao.dao import DAO
 from common.models.icpdao.github_app_token import GithubAppToken
 from common.utils.github_app import GithubAppClient
-
-sys.path.append(os.path.abspath('../../../../'))
-import settings
 
 from common.models.icpdao import init_mongo
 
